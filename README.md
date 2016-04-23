@@ -70,9 +70,9 @@ It is assumed that projects notes and manuscript(s) will be written using LaTeX.
 
 While LaTeX is not supported by all scientific journals, especially in the life sciences, it is still a good idea to draft your manuscript in LaTeX. An alternative is to write your manuscript using simple Markdown language; the disadvantage is that entering your references by hand can be a little tedious and error prone. If you consider the amount of time you spend writing and revising a manuscript --especially if you are the primary author-- it is very little effort to do a final cut-and-paste into a LibreOffice or Word and finalise the formatting there.
 
-To facilitate things, the `notes` and `ms` (manuscript) folders are initialised with a LaTeX template for notes and a manuscript. Obviously, some familiarity with LaTeX is required in order to use and compile these documents. 
+To facilitate things, the `notes`, `protocol` and `ms` (manuscript) folders are initialised with a LaTeX template for notes and a manuscript. The `notes` and `protocol` templates refer to reference and bibliography style files in the `ms` folder. Obviously, some familiarity with LaTeX is required in order to use and compile these documents. 
 
-Other folders that are included in the `src` folder are `ethics`, `slides`, `protocol`, `results`. It is assumed that these documents will be written in LaTeX. However, templates are currently not provided.
+Other folders that are included in the `src` folder are `ethics`, `slides`, `results`. It is assumed that these documents will be written in LaTeX. However, templates are currently not provided.
  
 data
 --

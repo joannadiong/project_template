@@ -1,6 +1,10 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{myStyle}
 
+% Set absolute file path for project
+% Change to approriate path when starting project.
+\newcommand{\projectpath}{/home/martin/Dropbox/sketchbook/python/project/project_template}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -11,8 +15,7 @@
 \rfoot{\thepage}
 
 % Graphicspath used to avoid trouble with paths. 
-% Change to approriate path when starting project.
-\graphicspath{{/home/martin/Dropbox/sketchbook/python/project/project_template/protocol/img/}}
+\graphicspath{{\projectpath/notes/img/}}
 
 \begin{document}
 
@@ -58,7 +61,7 @@ The whole point of it is this:
 
 % References:
 \newpage
-\bibliographystyle{./ref/jneurophysiol}
-\bibliography{./ref/ref_list}
+\bibliographystyle{\projectpath/ms/refs/jneurophysiol}
+\bibliography{\projectpath/ms/refs/ref_list}
  
 \end{document}

@@ -1,9 +1,12 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{myStyle}
 
-% Graphicspath used to avoid trouble with paths. 
+% Set absolute file path for project
 % Change to approriate path when starting project.
-\graphicspath{{/home/martin/Dropbox/sketchbook/python/project/project_template/notes/img/}}
+\newcommand{\projectpath}{/home/martin/Dropbox/sketchbook/python/project/project_template}
+
+% Graphicspath used to avoid trouble with paths. 
+\graphicspath{{\projectpath/notes/img/}}
 
 \begin{document}
 
@@ -19,7 +22,7 @@
 
 % References:
 \newpage
-\bibliographystyle{./ref/jneurophysiol}
-\bibliography{./ref/ref_list}
+\bibliographystyle{\projectpath/ms/refs/jneurophysiol}
+\bibliography{\projectpath/ms/refs/ref_list}
  
 \end{document}
