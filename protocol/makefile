@@ -6,7 +6,7 @@ $(FILE).pdf: $(FILE).tex
 	bibtex $(FILE)
 	pdflatex $(FILE)
 	pdflatex $(FILE)
-	rm -f $(FILE).log $(FILE).aux $(FILE).bbl $(FILE).blg $(FILE).out $(FILE).synctex.gz
+	rm -f $(FILE).log $(FILE).aux $(FILE).bbl $(FILE).blg $(FILE).out $(FILE).synctex.gz $(FILE).toc
 	cp $(FILE).pdf ../../doc/$(FILE)/
 	evince ../../doc/$(FILE)/$(FILE).pdf &
 
