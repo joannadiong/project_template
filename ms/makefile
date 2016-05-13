@@ -8,7 +8,7 @@ $(FILE).pdf: $(FILE).tex $(FIGS) $(REFS)
 	bibtex $(FILE)
 	pdflatex $(FILE)
 	pdflatex $(FILE)
-	rm -f $(FILE).log $(FILE).aux $(FILE).bbl $(FILE).blg $(FILE).out $(FILE).synctex.gz $(FILE).toc
+	rm -f $(FILE).log $(FILE).aux $(FILE).bbl $(FILE).blg $(FILE).dvi $(FILE).out $(FILE).synctex.gz $(FILE).toc
 	cp $(FILE).pdf ../../doc/$(FILE)/
 	evince ../../doc/$(FILE)/$(FILE).pdf &
 
