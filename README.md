@@ -1,5 +1,8 @@
 PROJECT TEMPLATE USING PYTHON
 =
+
+Note: this is a fork of [Martin Héroux's project template](https://github.com/MartinHeroux/project_template). File paths and LaTeX style files have been personalised. All other text remains as is. 
+
 Scientific projects often require the same folders and files. Starting each new project with a standard folder and file structure helps researchers stay organised. This can help  collaborators find and work with project files, as well as help make a project more reproducible.
 
 At present, this project template will not be appropriate for all scientific projects. Looking on the web, there are several other examples of project templates, but in my experience these are often aimed at people who work primarily with big data, modelling, or some form of software-based science. Scientists in these fields usually already know the benefits of version control, data integrity, file organisation and code testing. 
