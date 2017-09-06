@@ -1,1 +1,21 @@
+data/
+doc/
+
+# LaTeX files
+*.bbl
+*.blg
+*.aux
+*.out
+*.log
+*.pdf
+*.synctex.gz
+*.toc
+
+# R files
+*.Rhistory
+
+# Python files
+.goutputstream-R56V5X
 .idea/
+__pycache__/
+.ipynb_checkpoints/
