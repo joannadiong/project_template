@@ -10,7 +10,8 @@
 \usepackage{subcaption}
 \usepackage{natbib}               % bibliography style
 \usepackage{parskip}              % change separation space between paragraphs
-\usepackage[hidelinks]{hyperref}  % hide weblinks
+%\usepackage[hidelinks]{hyperref}  % hide weblinks
+\usepackage{hyperref}             % show weblinks
 \usepackage[document]{ragged2e}   % don't right justify 
 \usepackage{pdfpages}             % insert pages of external PDF
 \usepackage{lscape}               % allow landscape
@@ -23,9 +24,13 @@
     bookmarksopen=true,         
     bookmarksopenlevel=1,       
     pdfstartview=FitH,           
-    colorlinks=false,
+    %colorlinks=false,
     linktoc=all,
     linkcolor=blue,
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
 }
 %\usepackage [left=20mm, right=20mm, top=20mm, bottom=20mm]{geometry}
 %\linespread{1.2}
