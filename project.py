@@ -49,6 +49,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./ms', os.path.join(base, project, 'src', 'ms'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
     shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
+    shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
     shutil.copy('./README.txt', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./script.py', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./README_.md', os.path.join(base, project))
