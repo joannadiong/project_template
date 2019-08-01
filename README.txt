@@ -42,20 +42,20 @@ Full and shortened desriptions of each audit question; used when outputing resul
 
 CODE FILES
 ----------
-Python and R code files to perform final data analysis and generate figures were written by Joanna Diong and Martin Héroux (Python v3.6, R v3.4). Code has been tested and should be forward compatible.
+Python and R code files to perform final data analysis and generate figures were written by Joanna Diong and Martin Héroux (Python v3.7, R v3.4). Code has been tested and should be forward compatible.
+
+The environment `<name>` to run Python code can be installed from the Terminal (Mac or Linux, or using the PyCharm Terminal in Windows) using `<name>.yml`. Type:
+
+  conda env create -f <name>.yml
 
 Additional Python packages:
-neo 0.5.2
-quantities 0.12.1
-numpy 1.14.0
-matplotlib 2.1.2
-scipy 1.0.0
-pandas 0.22.
-seaborn 0.8.1
-statsmodels 0.8.0
+numpy 1.16.4 
+matplotlib 3.1.1
+pandas 0.25.0
 
-Note: `script.py` also calls functions from a custom written Python package `biosig`, available here:
-https://github.com/joannadiong/biosig
+`script.py` also calls the custom-written Python package `spike2py`, available here: 
+https://github.com/MartinHeroux/spike2py
+Download the package and 'point' the Python interpreter towards it.
 
 [script.py]
 Main script. Import data, call functions from `process.py` and associated files. Plot figures for individual subjects, conduct group analysis, plot figures for the group.
@@ -75,8 +75,8 @@ INSTRUCTIONS TO RUN ANALYSIS
 ----------------------------
 Download all code files and data.zip into a single folder. 
 Unzip the data file into the same location.
-Download the biosig package. 
-In `script.py` (line <#>), change the user-specific file path to set the location of biosig.
+Download the `spike2py` package. 
+Point the Python interpreter to the location of `spike2py`.
 Run `script.py`.
 
 Note: for ease and transparency, all raw and processed data are hosted in the OSF repository. 
