@@ -16,17 +16,17 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     folders = (os.path.join(base, project),
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
-               os.path.join(base, project, 'src', 'code', 'data'),
-               os.path.join(base, project, 'src', 'code', 'data', 'proc'),
-               os.path.join(base, project, 'src', 'code', 'data', 'raw'),
+               # os.path.join(base, project, 'src', 'code', 'data'),
+               # os.path.join(base, project, 'src', 'code', 'data', 'proc'),
+               # os.path.join(base, project, 'src', 'code', 'data', 'raw'),
                os.path.join(base, project, 'src', 'code', 'fig_gen'),
                os.path.join(base, project, 'src', 'code', 'stats'),
                os.path.join(base, project, 'src', 'ethics'),
                os.path.join(base, project, 'src', 'slides'),
                os.path.join(base, project, 'src', 'results'),
-               # os.path.join(base, project, 'data'),
-               # os.path.join(base, project, 'data', 'raw'),
-               # os.path.join(base, project, 'data', 'proc'),
+               os.path.join(base, project, 'data'),
+               os.path.join(base, project, 'data', 'raw'),
+               os.path.join(base, project, 'data', 'proc'),
                os.path.join(base, project, 'doc'),
                os.path.join(base, project, 'doc', 'notes'),
                os.path.join(base, project, 'doc', 'ethics'),
@@ -52,6 +52,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
     shutil.copy('./README.txt', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./script.py', os.path.join(base, project, 'src', 'code'))
+    shutil.copy('./script.R', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./README_.md', os.path.join(base, project))
     shutil.copy('./.gitignore', os.path.join(base, project))
 

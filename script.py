@@ -11,10 +11,15 @@ import pandas as pd
 import seaborn as sns
 import statsmodels as sm
 import statsmodels.formula.api as smf
-"""
 
 sys.path.insert(0, "/home/joanna/Dropbox/Sketchbook/python/biosig/")
 import biosig
+"""
+
+LENOVO = '/home/joanna/Dropbox/Projects/<project>'
+EXTDRV = '/media/joanna/Elements/Projects/<project>'
+REPO = '.'
+os.chdir(LENOVO) # set as REPO when released for OSF
 
 path_raw = os.path.join('.', 'data', 'raw')
 path_proc = os.path.join('.', 'data', 'proc')
