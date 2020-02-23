@@ -20,7 +20,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                # os.path.join(base, project, 'src', 'code', 'data', 'proc'),
                # os.path.join(base, project, 'src', 'code', 'data', 'raw'),
                os.path.join(base, project, 'src', 'code', 'fig_gen'),
-               os.path.join(base, project, 'src', 'code', 'stats'),
+               # os.path.join(base, project, 'src', 'code', 'stats'),
                os.path.join(base, project, 'src', 'ethics'),
                os.path.join(base, project, 'src', 'slides'),
                os.path.join(base, project, 'src', 'results'),
@@ -46,10 +46,11 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                   'project folder named "{}".\n'.format(path, project))
             sys.exit(1)  # abort
     # Copy over folder and associated files for ms and notes LaTex documents
+    shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
     shutil.copytree('./ms', os.path.join(base, project, 'src', 'ms'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
     shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
-    shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
+    shutil.copytree('./stats', os.path.join(base, project, 'src', 'code', 'stats'))
     shutil.copy('./README.txt', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./script.py', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./script.R', os.path.join(base, project, 'src', 'code'))
