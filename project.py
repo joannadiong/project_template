@@ -49,12 +49,14 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
     shutil.copytree('./slides', os.path.join(base, project, 'src', 'slides'))
     shutil.copytree('./stats', os.path.join(base, project, 'src', 'code', 'stats'))
+    shutil.copytree('./src', os.path.join(base, project, 'src', 'code', 'src'))
+    shutil.copytree('./tests', os.path.join(base, project, 'src', 'code', 'tests'))
     shutil.copy('./setup_init/README.md', os.path.join(base, project))
     shutil.copy('./setup_repo/README.md', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./setup_repo/make_venv.sh', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./setup_repo/requirements.txt', os.path.join(base, project, 'src', 'code'))
-    shutil.copy('./script.py', os.path.join(base, project, 'src', 'code'))
-    shutil.copy('./script.R', os.path.join(base, project, 'src', 'code'))
+    # shutil.copy('./script.py', os.path.join(base, project, 'src', 'code'))
+    # shutil.copy('./script.R', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./.gitignore', os.path.join(base, project))
 
 if __name__ == '__main__':
