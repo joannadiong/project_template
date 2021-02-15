@@ -1,5 +1,6 @@
 data/
 doc/
+src/code/env/
 
 # LaTeX files
 *.bbl
