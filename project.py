@@ -19,8 +19,8 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                os.path.join(base, project, 'src', 'code', 'fig_gen'),
                # os.path.join(base, project, 'src', 'code', 'stats'),
                os.path.join(base, project, 'src', 'ethics'),
-               os.path.join(base, project, 'src', 'slides'),
                os.path.join(base, project, 'src', 'results'),
+               # os.path.join(base, project, 'src', 'slides'),
                os.path.join(base, project, 'data'),
                os.path.join(base, project, 'data', 'raw'),
                os.path.join(base, project, 'data', 'proc'),
@@ -47,6 +47,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./ms', os.path.join(base, project, 'src', 'ms'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
     shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
+    shutil.copytree('./slides', os.path.join(base, project, 'src', 'slides'))
     shutil.copytree('./stats', os.path.join(base, project, 'src', 'code', 'stats'))
     shutil.copy('./setup_init/README.md', os.path.join(base, project))
     shutil.copy('./setup_repo/README.md', os.path.join(base, project, 'src', 'code'))
