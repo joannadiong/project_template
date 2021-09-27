@@ -1,7 +1,8 @@
 ---
 title: Title
 author: Joanna Diong
-theme: Copenhagen
+theme: Singapore
+color: dove
 fontsize: 10pt
 ---
 [//]: # (comment)

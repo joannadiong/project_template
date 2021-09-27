@@ -5,6 +5,7 @@ File structure
 -
 
 * src
+    * analysis
     * code 
     * ethics
     * ms
