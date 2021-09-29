@@ -3,14 +3,16 @@ doc/
 src/code/env/
 
 # LaTeX files
+*.aux
 *.bbl
 *.blg
-*.aux
-*.out
 *.log
-*.pdf
+*.nav
+*.out
+*.snm
 *.synctex.gz
 *.toc
+*.vrb
 
 # R files
 *.Rhistory

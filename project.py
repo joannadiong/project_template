@@ -44,10 +44,12 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
             sys.exit(1)  # abort
     # Copy over folder and associated files for ms and notes LaTex documents
     shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
-    shutil.copytree('./ms', os.path.join(base, project, 'src', 'ms'))
+    shutil.copytree('./ms_md', os.path.join(base, project, 'src', 'ms_md'))
+    shutil.copytree('./ms_tex', os.path.join(base, project, 'src', 'ms_tex'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
     shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
-    shutil.copytree('./slides', os.path.join(base, project, 'src', 'slides'))
+    shutil.copytree('./slides_md', os.path.join(base, project, 'src', 'slides_md'))
+    shutil.copytree('./slides_tex', os.path.join(base, project, 'src', 'slides_tex'))
     shutil.copytree('./prog', os.path.join(base, project, 'src', 'code', 'prog'))
     shutil.copytree('./stats', os.path.join(base, project, 'src', 'code', 'stats'))
     shutil.copytree('./tests', os.path.join(base, project, 'src', 'code', 'tests'))
