@@ -17,10 +17,8 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
                os.path.join(base, project, 'src', 'code', 'fig_gen'),
-               # os.path.join(base, project, 'src', 'code', 'stats'),
                os.path.join(base, project, 'src', 'ethics'),
                os.path.join(base, project, 'src', 'results'),
-               # os.path.join(base, project, 'src', 'slides'),
                os.path.join(base, project, 'data'),
                os.path.join(base, project, 'data', 'raw'),
                os.path.join(base, project, 'data', 'proc'),
@@ -47,7 +45,8 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./ms_md', os.path.join(base, project, 'src', 'ms_md'))
     shutil.copytree('./ms_tex', os.path.join(base, project, 'src', 'ms_tex'))
     shutil.copytree('./notes', os.path.join(base, project, 'src', 'notes'))
-    shutil.copytree('./protocol', os.path.join(base, project, 'src', 'protocol'))
+    shutil.copytree('./protocol_md', os.path.join(base, project, 'src', 'protocol_md'))
+    shutil.copytree('./protocol_tex', os.path.join(base, project, 'src', 'protocol_tex'))
     shutil.copytree('./slides_md', os.path.join(base, project, 'src', 'slides_md'))
     shutil.copytree('./slides_tex', os.path.join(base, project, 'src', 'slides_tex'))
     shutil.copytree('./prog', os.path.join(base, project, 'src', 'code', 'prog'))
@@ -57,8 +56,6 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copy('./setup_repo/README.md', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./setup_repo/make_venv.sh', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./setup_repo/requirements.txt', os.path.join(base, project, 'src', 'code'))
-    # shutil.copy('./script.py', os.path.join(base, project, 'src', 'code'))
-    # shutil.copy('./script.R', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./.gitignore', os.path.join(base, project))
 
 if __name__ == '__main__':
