@@ -28,10 +28,9 @@ capture log close
 set more off
 set scheme lean3
 pause on
-/*
-*/
 
-  ** WINDOWS: Enter name of root directory and name of this do file.
+/*
+  ** [DEPRECATED] WINDOWS: Enter name of root directory and name of this do file.
 
 local pathname = `""C:\Documents and Settings\Joanna Diong\My Documents\My Stata Files\""'
 local dofilename = `""<filename>.do""'
@@ -53,19 +52,23 @@ cd `pathoflogfilesname'
 *log using `logfilename'
 *copy `pathandnameofdofile' `backupdofilename'
 cd `pathofdatafilesname'
+*/
 
-  ** LINUX: Enter name of root directory and name of this do file. ** LINUX: EDIT **
+  ** LINUX: Enter name of root directory and name of this do file.
 
-local pathname = `""/home/joanna/Dropbox/Projects/<filepath>/""'
-local dofilename = `""<filename>.do""'
+local projpathname = `""/home/joanna/Dropbox/Projects/<project>/""'
+local codepathname = `""src/code/prog/""'
+local datarawpathname = `""data/raw/""'
+local dataprocpathname = `""data/proc/""'
+local dofilename = `""script.do""'
 
   ** Open a time- and date-stamped log file and copy a time- and date-stamped
   ** do file and data file to the log file directory.
 
-local pathandnameofdofile = `"""' + `pathname' + `dofilename' + `"""'
-local pathoflogfilesname = `"""' + `pathname' + "log-files/" + `"""'
-local pathofdatafilesname = `"""' + `pathname' + "data/" + `"""'
-local pathofgraphfilesname = `"""' + `pathname' + "graphs/" + `"""'
+local pathandnameofdofile = `"""' + `projpathname' + `codepathname' + `dofilename' + `"""'
+local pathofdatafilesname = `"""' + `projpathname' + `datarawpathname' + `"""'
+local pathoflogfilesname = `"""' + `projpathname' + `dataprocpathname' + `"""'
+local pathofgraphfilesname = `"""' + `projpathname' + `dataprocpathname' + `"""'
 local cdate = "c(current_date)"
 local ctime = "c(current_time)"
 local ctime = subinstr(`ctime',":","h",1)

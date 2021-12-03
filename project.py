@@ -16,7 +16,6 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     folders = (os.path.join(base, project),
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
-               os.path.join(base, project, 'src', 'code', 'fig_gen'),
                os.path.join(base, project, 'src', 'ethics'),
                os.path.join(base, project, 'src', 'results'),
                os.path.join(base, project, 'data'),
@@ -50,7 +49,6 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copytree('./slides_md', os.path.join(base, project, 'src', 'slides_md'))
     shutil.copytree('./slides_tex', os.path.join(base, project, 'src', 'slides_tex'))
     shutil.copytree('./prog', os.path.join(base, project, 'src', 'code', 'prog'))
-    shutil.copytree('./stats', os.path.join(base, project, 'src', 'code', 'stats'))
     shutil.copytree('./tests', os.path.join(base, project, 'src', 'code', 'tests'))
     shutil.copy('./setup_init/README.md', os.path.join(base, project))
     shutil.copy('./setup_repo/README.md', os.path.join(base, project, 'src', 'code'))
