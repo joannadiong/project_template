@@ -57,7 +57,7 @@ cd `pathofdatafilesname'
   ** LINUX: Enter name of root directory and name of this do file.
 
 local projpathname = `""/home/joanna/Dropbox/Projects/<project>/""'
-local codepathname = `""src/code/prog/""'
+local codepathname = `""src/code/bin/""'
 local datarawpathname = `""data/raw/""'
 local dataprocpathname = `""data/proc/""'
 local dofilename = `""script.do""'
