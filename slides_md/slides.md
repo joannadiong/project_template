@@ -1,11 +1,15 @@
 ---
 title: Title
 author: Joanna Diong
-theme: Singapore
-color: dove
+theme: metropolis
 fontsize: 10pt
 ---
 [//]: # (comment)
+
+<!---
+your comment goes here
+and here
+-->
 
 # Header 1
 
@@ -35,7 +39,7 @@ Principles adapted from [@Lindsay2013]
 
 # Figures
 
-![](./figures/table-Kalkman.png){width=100% height=100%} [@Kalkman2019]
+![](./img/table-Kalkman.png){width=100% height=100%} [@Kalkman2019]
 
 # Inserting links
 

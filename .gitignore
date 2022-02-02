@@ -1,7 +1,7 @@
 data/
 doc/
-src/code/prog/env/
-src/code/prog/venv/
+env/
+venv/
 
 # LaTeX files
 *.aux

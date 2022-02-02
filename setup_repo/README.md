@@ -1,11 +1,10 @@
 # <Title>
 
-<Author 1><sup>1</sup>
-<Author 2><sup>2</sup>
+First A. Author^1^, Second B. Author^2^, Third Author^3^, Last  Author^1,2,3^, New LastAuthor^2^
 
-<sup>1</sup><Affiliation 1>
-
-<sup>2</sup><Affiliation 2>
+1. University of Pandoc, Randwick, NSW, Australia
+2. Markdown Institute, Ottawa, ON, Canada
+3. LaTeX Research Institute, Kingston, On, Canada
 
 ## Suggested citation
 

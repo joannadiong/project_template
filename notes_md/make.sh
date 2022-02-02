@@ -6,8 +6,8 @@ papermate
 #pandoc tables.tex -f latex -t docx -o tables.docx
 
 #open generated docs
-#xreader ms.pdf& #Mint
-#evince ms.pdf& #Ubuntu
+#xreader notes.pdf& #Mint
+#evince notes.pdf& #Ubuntu
 #libreoffice tables.docx
 
 #generate a marked-up PDF
