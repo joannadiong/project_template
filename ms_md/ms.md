@@ -1,5 +1,15 @@
 # HOW TO PREPARE A GENERIC SCIENTIFIC MANUSCRIPT FOR SUBMISSION USING MARKDOWN AND PANDOC
 
+<!---
+Make final changes for submission
+Commit, add tag:
+$ git commit -m 'Revised version for submission'
+$ git tag -a v4_revised -m "Revised version for submission"
+Generate PDF of tracked changes:
+$ python papermate.py --tags v4_revised v3_submitted
+$ git tag -n
+-->
+
 First A. Author^1^, Second B. Author^2^, Third Author^3^, Last  Author^1,2,3^, New LastAuthor^2^
 
 1. University of Pandoc, Randwick, NSW, Australia
@@ -7,47 +17,37 @@ First A. Author^1^, Second B. Author^2^, Third Author^3^, Last  Author^1,2,3^, N
 3. LaTeX Research Institute, Kingston, On, Canada
 
 \
-\
 
-<!---
-Lines can be added or deleted
-If adding line in middle, end line with a space and \
--->
-
-**Corresponding author** \
-Dr. First A. Author \
-University of Pandoc \
-42 Printers Lane \
-2031, Randwick, NSW, Australia \
-email: fa.author@pandoc.au \
-ph: +61-1-2345-6789
+__Corresponding author__ \
+Dr Joanna Diong \
+School of Medical Sciences, Faculty of Medicine and Health \
+The University of Sydney \
+NSW 2006, Australia \
+email: joanna.diong@sydney.edu.au \
+ph: +61-2-8627-5491
 
 \
-\
 
-**Keywords:** Pandoc, Markdown, Latex \
-**Running title:** Markdown manuscript \
-**Wordcount:** 4,321
+__Keywords:__ Pandoc, Markdown, Latex \
+__Running title:__ Markdown manuscript \
+__Wordcount:__ 4,321
 
 \newpage
 
 # Abstract
-**Background.** 
-**Methods.** 
-**Results.** 
-**Conclusion.** 
+__Background.__ 
+__Methods.__ 
+__Results.__ 
+__Conclusion.__ 
 
 \newpage
 
 # Introduction
 
-Atom editor. 
-`character-map` plugin, hotkey, `Alt-l`. Typed `plusminus`: `±`. 
 
 References.
 Bibliography: [@Diong2012a; @Diong2012b]
 In text: @Diong2015
-
 
 Footnote: `[^1]: Footnote.` 
 
@@ -82,13 +82,19 @@ Footnote: `[^1]: Footnote.`
 
 # References
 
+\singlespacing
+
+::: {#refs}
+:::
 
 \newpage
 
 # Tables
 
+<!---
 Add caption, allow for one empty line and start the caption with 'Table: '
 To ensure LaTeX produces the table in the expected location, use `\clearpage` between each new table you add.
+-->
 
 
 \newpage
@@ -109,10 +115,14 @@ To ensure LaTeX produces the table in the expected location, use `\clearpage` be
 # Funding
 
 
-# Author Contributions
+# Author contributions
 
 
 \clearpage
+
+Atom editor. 
+`character-map` plugin, hotkey, `Alt-l`. Typed `plusminus`: `±`. 
+
 
 Inline formatting    Pandoc Markdown command   Result
 ------------------   ------------------------  ---------------

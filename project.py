@@ -55,6 +55,7 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     shutil.copy('./setup_repo/README.md', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./setup_repo/make_venv.sh', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./setup_repo/requirements.txt', os.path.join(base, project, 'src', 'code'))
+    shutil.copy('./setup_repo/LICENSE.md', os.path.join(base, project, 'src', 'code'))
     shutil.copy('./.gitignore', os.path.join(base, project))
 
 if __name__ == '__main__':
