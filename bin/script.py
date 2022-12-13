@@ -81,14 +81,14 @@ outfile.write('\nIndependent tests between groups')
 outfile.write('\n----------------------------------------')
 outfile.close()
 
-with open(file, 'a') as file:
-    file.write('\n')
-    file.write('\n--------------------')
-    file.write('\n' + var + ': ')
-    file.write('\n--------------------')
-    file.write('\n')
-    file.write('\n' + str(df_describe) + '\n')
-    file.write('\nUnadjusted regression: \n')
-    file.write('\n' + str(md_fit.summary()) + '\n')
+with open(file, 'a') as f:
+    f.write('\n')
+    f.write('\n--------------------')
+    f.write('\n' + var + ': ')
+    f.write('\n--------------------')
+    f.write('\n')
+    f.write('\n' + str(df_describe) + '\n')
+    f.write('\nUnadjusted regression: \n')
+    f.write('\n' + str(md_fit.summary()) + '\n')
 
 
