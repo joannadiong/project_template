@@ -36,4 +36,9 @@ Footnote: `[^1]: Footnote.`
 
 # Summary
 
+# References
 
+\singlespacing
+
+::: {#refs}
+:::

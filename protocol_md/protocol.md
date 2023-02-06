@@ -52,4 +52,8 @@ Footnote: `[^1]: Footnote.`
 
 # References
 
+\singlespacing
+
+::: {#refs}
+:::
 

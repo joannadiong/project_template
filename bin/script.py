@@ -1,6 +1,7 @@
 """
-In PyCharm, add `prog` path to `sys.path.extend(['route_to_first_project', 'route_to_second_project']`:
-Settings/Preferences | Build, Execution, Deployment | Console | Python Console
+In PyCharm Settings/Preferences | Build, Execution, Deployment | Console | Python Console, 
+add `code/bin` path to `sys.path.extend(['route_to_first_project', 'route_to_second_project']`
+e.g. `sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS, '/home/joanna/Dropbox/Projects/<project>/src/code/bin/'])`
 """
 import os
 import numpy as np
