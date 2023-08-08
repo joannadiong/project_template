@@ -28,6 +28,15 @@ In text: @Diong2015
 
 Footnote: `[^1]: Footnote.` 
 
+\begin{equation}
+\end{equation}
+
+$sw_{i} = \frac{P(A_{i} = a_{i})} {P(A_{i} = a_{i} \mid C_{i} = c_{i})}$
+
+where
+
+* $sw_{i}$: stabilised weight for each individual $i$
+
 # Note 2
 
 ![Caption_goes_here](img/figure.png){ width=10cm }
