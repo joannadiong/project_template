@@ -16,8 +16,8 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
     folders = (os.path.join(base, project),
                os.path.join(base, project, 'src'),
                os.path.join(base, project, 'src', 'code'),
-               os.path.join(base, project, 'src', 'ethics'),
-               os.path.join(base, project, 'src', 'results'),
+               # os.path.join(base, project, 'src', 'ethics'),
+               # os.path.join(base, project, 'src', 'results'),
                os.path.join(base, project, 'data'),
                os.path.join(base, project, 'data', 'raw'),
                os.path.join(base, project, 'data', 'proc'),
@@ -40,15 +40,15 @@ def gen(base=sys.argv[1], project=sys.argv[2]):
                   'project folder named "{}".\n'.format(path, project))
             sys.exit(1)  # abort
     # Copy over folder and associated files for ms and notes LaTex documents
-    shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
+    # shutil.copytree('./analysis', os.path.join(base, project, 'src', 'analysis'))
     shutil.copytree('./ms_md', os.path.join(base, project, 'src', 'ms_md'))
-    shutil.copytree('./ms_tex', os.path.join(base, project, 'src', 'ms_tex'))
+    # shutil.copytree('./ms_tex', os.path.join(base, project, 'src', 'ms_tex'))
     shutil.copytree('./notes_md', os.path.join(base, project, 'src', 'notes_md'))
-    shutil.copytree('./notes_tex', os.path.join(base, project, 'src', 'notes_tex'))
+    # shutil.copytree('./notes_tex', os.path.join(base, project, 'src', 'notes_tex'))
     shutil.copytree('./protocol_md', os.path.join(base, project, 'src', 'protocol_md'))
-    shutil.copytree('./protocol_tex', os.path.join(base, project, 'src', 'protocol_tex'))
+    # shutil.copytree('./protocol_tex', os.path.join(base, project, 'src', 'protocol_tex'))
     shutil.copytree('./slides_md', os.path.join(base, project, 'src', 'slides_md'))
-    shutil.copytree('./slides_tex', os.path.join(base, project, 'src', 'slides_tex'))
+    # shutil.copytree('./slides_tex', os.path.join(base, project, 'src', 'slides_tex'))
     shutil.copytree('./bin', os.path.join(base, project, 'src', 'code', 'bin'))
     shutil.copytree('./tests', os.path.join(base, project, 'src', 'code', 'tests'))
     shutil.copy('./setup_init/README.md', os.path.join(base, project))
