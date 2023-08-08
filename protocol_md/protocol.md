@@ -33,6 +33,15 @@ Footnote: `[^1]: Footnote.`
 
 # Methods
 
+\begin{equation}
+\end{equation}
+
+$sw_{i} = \frac{P(A_{i} = a_{i})} {P(A_{i} = a_{i} \mid C_{i} = c_{i})}$
+
+where
+
+* $sw_{i}$: stabilised weight for each individual $i$
+
 
 ## Participants
 
