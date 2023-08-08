@@ -1,24 +1,18 @@
 """
 In PyCharm Settings/Preferences | Build, Execution, Deployment | Console | Python Console, 
-add `code/bin` path to `sys.path.extend(['route_to_first_project', 'route_to_second_project']`
+copy-paste `code/bin` path to `sys.path.extend(['route_to_first_project', 'route_to_second_project']` in the text filed
 e.g. `sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS, '/home/joanna/Dropbox/Projects/<project>/src/code/bin/'])`
 """
-import os
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
+import polars as pl
+import matplotlib.pyplot as plt
 import statsmodels.formula.api as smf
-from pathlib import Path
 
-LENOVO = '/home/joanna/Dropbox/Projects/<project>'
-EXTDRV = '/media/joanna/Elements/Projects/<project>'
-REPO = '.'
-os.chdir(LENOVO)
+import proc
 
-project_path = Path('/home/joanna/Dropbox/Projects/<project>/data')
-path_raw = project_path / 'raw'
-path_proc = project_path / 'proc'
 
+# setup variables
 CON = ['sub01', 'sub02', 'sub03']
 EXP = ['sub31', 'sub32', 'sub33']
 
